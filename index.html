@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Val Lanches</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="overlay">
         <header>
             <nav>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo.jpg" alt="Logo Val Lanches">
+                        <img src="img/logo.png" alt="Logo Val Lanches">
                     </a>
                 </div>
-                
                 <ul class="menu">
-                    <li><a href="index.html">Ínicio</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="sobre.html">Sobre a Val</a></li>
+                    <li><a id="nav-home" href="index.html">Início</a></li>
+                    <li><a id="nav-menu" href="cardapio.html">Cardápio</a></li>
+                    <li><a id="nav-about" href="sobre.html">Sobre a Val</a></li>
+                    <li><a id="nav-suggestion" href="sugestao.html">Sugestões</a></li>
                 </ul>
+
+                <div class="lang-toggle">
+                    <button id="lang-btn" aria-label="Trocar idioma">
+                        <img id="lang-flag" src="img/uk.png" alt="Trocar idioma" width="30" height="20">
+                    </button>
+                    <button id="theme-btn" aria-label="Alternar tema">
+                        <img id="theme-flag" src="img/night-mode.png" alt="Alternar tema" width="30" height="20">
+                    </button>
+                </div>
+
             </nav>
         </header>
-        
         <main>
             <section class="destaques">
-                <h2>Mais Pedidos</h2>
-                <div class="produtos">
-                    <div class="produto">
-                        <img src="img/xsalada.png" alt="X-Salada">
-                        <h4>X-Salada</h4>
+                <h2 id="highlights-title">Mais Pedidos</h2>
+                <div class="carrossel">
+                    <div class="produtos" id="carrosselcontainer">
+                        <div class="produto">
+                            <img src="img/xsalada.png" alt="X-Salada">
+                            <h4>X-Salada</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/xtudo.png" alt="X-Tudo">
+                            <h4>X-Tudo</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/xbacon.png" alt="X-Bacon">
+                            <h4>X-Bacon</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/xcalabresa.png" alt="X-Calabresa">
+                            <h4>X-Calabresa</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/xegg.png" alt="X-Egg">
+                            <h4>X-Egg</h4>
+                        </div>
+                        <div class="produto">
+                            <img src="img/dogtradicional.png" alt="Cachorro-Quente Tradicional">
+                            <h4>Cachorro-Quente</h4>
+                        </div>
                     </div>
-                    <div class="produto">
-                        <img src="img/xtudo.png" alt="X-Tudo">
-                        <h4>X-Tudo</h4>
-                    </div>
-                    <div class="produto">
-                        <img src="img/xbacon.png" alt="X-Bacon">
-                        <h4>X-Bacon</h4>
-                    </div>
-                </div>
-            </section>            
-        
-            <section class="galeria">
-                <h2>Na nossa cozinha e na sua mesa</h2>
-                <div class="fotos">
-                        <img src="img/preparando.png" alt="Lanche sendo preparado">
-                        <img src="img/cliente.png" alt="Cliente feliz com lanche">
-                        <img src="img/bandeja.png" alt="Suco e batata na bandeja">
-                        <img src="img/van.png" alt="Ambiente da lanchonete">
                 </div>
             </section>
-        
+            <section class="galeria">
+                <h2 id="kitchen-message">Na nossa cozinha e na sua mesa</h2>
+                <div class="fotos">
+                    <img src="img/preparando.png" alt="Lanche sendo preparado">
+                    <img src="img/cliente.png" alt="Cliente feliz com lanche">
+                    <img src="img/bandeja.png" alt="Suco e batata na bandeja">
+                    <img src="img/van.png" alt="Ambiente da lanchonete">
+                </div>
+            </section>
             <section class="cta">
-                <h2>Venha nos visitar!</h2>
-                <p>Estamos localizados na Av. Eng. Eusébio Stevaux, 823, em frente ao Senac Santo Amaro.</p>
+                <h2 id="visit-title">Venha nos visitar!</h2>
+                <p id="visit-text">Estamos localizados na Av. Eng. Eusébio Stevaux, 823, em frente ao Senac Santo Amaro.</p>
             </section>
         </main>
-        
-    </div> 
-        <footer>
-            <p>&copy; 2025 Val Lanches - Todos os direitos reservados.</p>
-            <p>Em frente ao SENAC | Av. Eng. Eusébio Stevaux, 823</p>
-        </footer>
+    </div>
+    <footer>
+        <p id="footer-copy">&copy; 2025 Val Lanches - Todos os direitos reservados.</p>
+        <p id="footer-address">Em frente ao SENAC | Av. Eng. Eusébio Stevaux, 823</p>
+    </footer>
+    <script src="js/lang.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

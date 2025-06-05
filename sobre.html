@@ -12,34 +12,45 @@
             <nav>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo.jpg" alt="Val Lanches">
+                        <img src="img/logo.png" alt="Val Lanches">
                     </a>
                 </div>
                 <ul class="menu">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="sobre.html">Sobre a Val</a></li>
+                    <li><a id="nav-home" href="index.html">Início</a></li>
+                    <li><a id="nav-menu" href="cardapio.html">Cardápio</a></li>
+                    <li><a id="nav-about" href="sobre.html">Sobre a Val</a></li>
+                    <li><a id="nav-suggestion" href="sugestao.html">Sugestões</a></li>
                 </ul>
+
+                <div class="lang-toggle">
+                    <button id="lang-btn" aria-label="Trocar idioma">
+                        <img id="lang-flag" src="img/uk.png" alt="Trocar idioma" width="30" height="20">
+                    </button>
+                    <button id="theme-btn" aria-label="Alternar tema">
+                        <img id="theme-flag" src="img/night-mode.png" alt="Alternar tema" width="30" height="20">
+                    </button>
+                </div>                 
+        
             </nav>
         </header>
 
         <section>
-            <h2>Sobre a Val Lanches</h2>
-            <p>A <strong>Val Lanches</strong> nasceu da paixão por comida simples, saborosa e feita com carinho. Com anos de experiência na cozinha e aquele tempero caseiro inconfundível, a Val conquistou os corações (e estômagos!) de quem passa pela Av. Eng. Eusébio Stevaux.</p>
-
-            <p>Nosso objetivo é oferecer lanches generosos, ingredientes frescos e atendimento de primeira, sempre com um sorriso no rosto. Se você está procurando um lugar para matar a fome com qualidade e preço justo, achou!</p>
-
-            <p>Venha nos conhecer e provar os lanches que são sucesso no bairro — temos opções para todos os gostos, desde o clássico X-Salada até o poderoso X-Tudo. Ah, e não se esqueça de experimentar a nossa batata frita crocante 😉</p>
-
-            <p><strong>Val Lanches — mais que um lanche, é carinho em cada mordida.</strong></p>
+            <h2 id="about-title">Sobre a Val Lanches</h2>
+            <p id="about-p1">A <strong>Val Lanches</strong> nasceu da paixão por comida simples, saborosa e feita com carinho...</p>
+            <p id="about-p2">Nosso objetivo é oferecer lanches generosos...</p>
+            <p id="about-p3">Venha nos conhecer e provar os lanches que são sucesso no bairro...</p>
+            <p id="about-p4"><strong>Val Lanches — mais que um lanche, é carinho em cada mordida.</strong></p>
         </section>
     </div>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Val Lanches - Todos os direitos reservados.</p>
-            <p>Em frente ao SENAC | Av. Eng. Eusébio Stevaux, 823</p>
+            <p id="footer-copy">&copy; 2025 Val Lanches - Todos os direitos reservados.</p>
+            <p id="footer-address">Em frente ao SENAC | Av. Eng. Eusébio Stevaux, 823</p>
         </div>
     </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,125 +1,110 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cardápio - Val Lanches</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="overlay">
-            <header>
-                <nav>
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo.jpg" alt="Val Lanches">
-                        </a>
-                    </div>
-                    <ul class="menu">
-                        <li><a href="index.html">Ínicio</a></li>
-                        <li><a href="cardapio.html">Cardápio</a></li>
-                        <li><a href="sobre.html">Sobre a Val</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <section id="cardapio">
-                <h1>Nosso Cardápio</h1>
-                <p>Escolha entre nossas deliciosas opções:</p>
-            
-                <div class="menu-lista">
-                    <div class="lanche">
-                        <h3>X-Tudo</h3>
-                        <span class="preco">R$ 19,00</span>
-                    </div>
-                    <p class="desc">O lanche mais completo, com tudo o que você gosta!</p>
-            
-                    <div class="lanche">
-                        <h3>X-Calabresa</h3>
-                        <span class="preco">R$ 17,00</span>
-                    </div>
-                    <p class="desc">Hambúrguer suculento com calabresa fatiada e queijo derretido.</p>
-            
-                    <div class="lanche">
-                        <h3>X-Frango</h3>
-                        <span class="preco">R$ 17,50</span>
-                    </div>
-                    <p class="desc">Peito de frango grelhado, queijo e salada fresca.</p>
-            
-                    <div class="lanche">
-                        <h3>X-Bacon</h3>
-                        <span class="preco">R$ 18,00</span>
-                    </div>
-                    <p class="desc">Hambúrguer com muito bacon crocante e queijo.</p>
-            
-                    <div class="lanche">
-                        <h3>X-Egg</h3>
-                        <span class="preco">R$ 16,50</span>
-                    </div>
-                    <p class="desc">Hambúrguer com ovo frito, queijo e salada no pão macio.</p>
-            
-                    <div class="lanche">
-                        <h3>Cheeseburger</h3>
-                        <span class="preco">R$ 15,00</span>
-                    </div>
-                    <p class="desc">Simples e delicioso: hambúrguer, queijo e molho especial.</p>
-            
-                    <div class="lanche">
-                        <h3>Cachorro-Quente Tradicional</h3>
-                        <span class="preco">R$ 12,00</span>
-                    </div>
-                    <p class="desc">Pão, salsicha, molho de tomate, milho, batata palha e ketchup.</p>
-            
-                    <div class="lanche">
-                        <h3>Dogão da Val</h3>
-                        <span class="preco">R$ 15,00</span>
-                    </div>
-                    <p class="desc">2 salsichas, purê, molho caseiro, milho, vinagrete e batata palha.</p>
-            
-                    <div class="lanche">
-                        <h3>Hot Dog com Cheddar</h3>
-                        <span class="preco">R$ 13,00</span>
-                    </div>
-                    <p class="desc">Salsicha no pão com molho, cheddar cremoso e batata palha.</p>
-            
-                    <div class="lanche">
-                        <h3>Batata Frita - Pequena</h3>
-                        <span class="preco">R$ 10,00</span>
-                    </div>
-                    <p class="desc">Porção pequena de batatas crocantes para acompanhar seu lanche.</p>
-            
-                    <div class="lanche">
-                        <h3>Batata Frita - Grande</h3>
-                        <span class="preco">R$ 15,00</span>
-                    </div>
-                    <p class="desc">Porção generosa de batata frita crocante.</p>
-            
-                    <div class="lanche">
-                        <h3>Batata com Cheddar e Bacon</h3>
-                        <span class="preco">R$ 18,00</span>
-                    </div>
-                    <p class="desc">Batatas fritas com cheddar cremoso e pedacinhos de bacon crocante.</p>
-            
-                    <div class="lanche">
-                        <h3>Refrigerante Lata</h3>
-                        <span class="preco">R$ 6,00</span>
-                    </div>
-                    <p class="desc">Coca-Cola, Guaraná, Fanta e outros sabores (350ml).</p>
-            
-                    <div class="lanche">
-                        <h3>Água Mineral</h3>
-                        <span class="preco">R$ 4,00</span>
-                    </div>
-                    <p class="desc">Garrafa de água com ou sem gás (500ml).</p>
-                </div>
-            </section>
-            
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio - Val Lanches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Val Lanches">
+          </a>
         </div>
-            <footer>
-                <div class="footer-content">
-                    <p>&copy; 2025 Val Lanches - Todos os direitos reservados.</p>
-                    <p>Em frente ao SENAC | Av. Eng. Eusébio Stevaux, 823</p>
-                </div>
-            </footer>
-    </body>
-    </html>
+        <ul class="menu">
+          <li><a id="nav-home" href="index.html">Início</a></li>
+          <li><a id="nav-menu" href="cardapio.html">Cardápio</a></li>
+          <li><a id="nav-about" href="sobre.html">Sobre a Val</a></li>
+          <li><a id="nav-suggestion" href="sugestao.html">Sugestões</a></li>
+        </ul>
+
+        <div class="lang-toggle">
+            <button id="lang-btn" aria-label="Trocar idioma">
+                <img id="lang-flag" src="img/uk.png" alt="Trocar idioma" width="30" height="20">
+            </button>
+            <button id="theme-btn" aria-label="Alternar tema">
+                <img id="theme-flag" src="img/night-mode.png" alt="Alternar tema" width="30" height="20">
+            </button>
+        </div>
+
+      </nav>
+    </header>
+
+    <section id="cardapio">
+      <h1 id="menu-title">Nosso Cardápio</h1>
+      <p id="menu-intro">Escolha entre nossas deliciosas opções:</p>
+
+      <div class="menu-lista">
+        <div class="lanche"><h3>X-Tudo</h3><span class="preco">R$ 19,00</span></div>
+        <p class="desc" id="desc-xtudo">O lanche mais completo, com tudo o que você gosta!</p>
+        <hr/>
+
+        <div class="lanche"><h3>X-Calabresa</h3><span class="preco">R$ 17,00</span></div>
+        <p class="desc" id="desc-xcalabresa">Hambúrguer suculento com calabresa fatiada e queijo derretido.</p>
+        <hr/>
+
+        <div class="lanche"><h3>X-Frango</h3><span class="preco">R$ 17,50</span></div>
+        <p class="desc" id="desc-xfrango">Peito de frango grelhado, queijo e salada fresca.</p>
+        <hr/>
+
+        <div class="lanche"><h3>X-Bacon</h3><span class="preco">R$ 18,00</span></div>
+        <p class="desc" id="desc-xbacon">Hambúrguer com muito bacon crocante e queijo.</p>
+        <hr/>
+
+        <div class="lanche"><h3>X-Egg</h3><span class="preco">R$ 16,50</span></div>
+        <p class="desc" id="desc-xegg">Hambúrguer com ovo frito, queijo e salada no pão macio.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Cheeseburger</h3><span class="preco">R$ 15,00</span></div>
+        <p class="desc" id="desc-cheeseburger">Simples e delicioso: hambúrguer, queijo e molho especial.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Cachorro-Quente Tradicional</h3><span class="preco">R$ 12,00</span></div>
+        <p class="desc" id="desc-dogtradicional">Pão, salsicha, molho de tomate, milho, batata palha e ketchup.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Dogão da Val</h3><span class="preco">R$ 15,00</span></div>
+        <p class="desc" id="desc-dogval">2 salsichas, purê, molho caseiro, milho, vinagrete e batata palha.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Hot Dog com Cheddar</h3><span class="preco">R$ 13,00</span></div>
+        <p class="desc" id="desc-dogcheddar">Salsicha no pão com molho, cheddar cremoso e batata palha.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Batata Frita - Pequena</h3><span class="preco">R$ 10,00</span></div>
+        <p class="desc" id="desc-batataP">Porção pequena de batatas crocantes para acompanhar seu lanche.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Batata Frita - Grande</h3><span class="preco">R$ 15,00</span></div>
+        <p class="desc" id="desc-batataG">Porção generosa de batata frita crocante.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Batata com Cheddar e Bacon</h3><span class="preco">R$ 18,00</span></div>
+        <p class="desc" id="desc-batataCheddarBacon">Batatas fritas com cheddar cremoso e pedacinhos de bacon crocante.</p>
+        <hr/>
+
+        <div class="lanche"><h3>Refrigerante Lata</h3><span class="preco">R$ 6,00</span></div>
+        <p class="desc" id="desc-refrigerante">Coca-Cola, Guaraná, Fanta e outros sabores (350ml).</p>
+        <hr/>
+
+        <div class="lanche"><h3>Água Mineral</h3><span class="preco">R$ 4,00</span></div>
+        <p class="desc" id="desc-agua">Garrafa de água com ou sem gás (500ml).</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p id="footer-copy">&copy; 2025 Val Lanches - Todos os direitos reservados.</p>
+      <p id="footer-address">Em frente ao SENAC | Av. Eng. Eusébio Stevaux, 823</p>
+    </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
