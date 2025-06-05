@@ -5,7 +5,8 @@ Este é um projeto de faculdade que simula o site de uma lanchonete estilo food 
 ## 💻 Tecnologias utilizadas
 
 - HTML5
-- CSS3 (em breve)
+- CSS3
+- JS
 - Git e GitHub
 
 ## 🌐 Acesse o site
