@@ -32,13 +32,13 @@ header {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
 }
 
 header nav {
     display: flex;
-    justify-content:space-between;
     align-items: center;
-    max-width: 1200px;
+    justify-content: center;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -48,13 +48,6 @@ header nav {
     min-height: 100vh;
     padding-top: 100px;
     padding-bottom: 80px;
-}
-
-.logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    width: 105px;
 }
 
 .logo img {
@@ -264,7 +257,6 @@ body.dark-theme {
     --overlay-bg: rgba(0, 0, 0, 0.9);
 }
 
-/* === Formulário de Sugestões === */
 .form-container {
     max-width: 600px;
     margin: 0 auto;
@@ -370,4 +362,92 @@ button[type="submit"]:hover {
     section {
         width: 90%;
     }
+}
+
+body.theme-transition {
+    transition: background-color 0.4s ease, color 0.4s ease, 
+                background-image 0.4s ease;
+}
+
+body.theme-transition * {
+    transition: background-color 0.4s ease, color 0.4s ease, 
+                background-image 0.4s ease;
+}
+
+.theme-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle input {
+    display: none;
+}
+
+.slider {
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.4s;
+}
+
+.slider .ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.slider .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.slider .sun {
+    left: 8px;
+    color: #f39c12;
+}
+
+.slider .moon {
+    right: 8px;
+    color: #f1c40f;
+}
+
+input:checked + .slider {
+    background-color: #666;
+}
+
+input:checked + .slider .ball {
+    transform: translateX(30px);
+}
+
+.theme-float {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
 }

@@ -9,29 +9,35 @@
 <body>
     <div class="overlay">
         <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo Val Lanches">
+                </a>
+            </div>
             <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Logo Val Lanches">
-                    </a>
-                </div>
                 <ul class="menu">
                     <li><a id="nav-home" href="index.html">Início</a></li>
                     <li><a id="nav-menu" href="cardapio.html">Cardápio</a></li>
                     <li><a id="nav-about" href="sobre.html">Sobre a Val</a></li>
                     <li><a id="nav-suggestion" href="sugestao.html">Sugestões</a></li>
                 </ul>
-
+            </nav>
+            
+            <div class="theme-float">
                 <div class="lang-toggle">
                     <button id="lang-btn" aria-label="Trocar idioma">
                         <img id="lang-flag" src="img/uk.png" alt="Trocar idioma" width="30" height="20">
                     </button>
-                    <button id="theme-btn" aria-label="Alternar tema">
-                        <img id="theme-flag" src="img/night-mode.png" alt="Alternar tema" width="30" height="20">
-                    </button>
                 </div>
-
-            </nav>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="toggle-theme">
+                    <label for="toggle-theme" class="slider">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
         </header>
         <main>
             <section class="destaques">
